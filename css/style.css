@@ -1,0 +1,40 @@
+
+header {
+    padding: 20px;
+    margin-bottom: 20px;
+    Float: center;
+    width: auto;
+    color: #ccc;
+    background: #888;
+}
+
+
+
+h1 {
+    Float: left;
+    width: 33.3%;
+    color: #333;
+    background: #ccc;
+  }
+
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}  
+
+#about {
+    padding: 20px;
+    margin-bottom: 20px;
+    float: center;
+    width: 75%;
+    color: white;
+    background: #666;
+    }
+
+footer {
+    padding: 20px;
+    clear: both;
+    color: black;
+    background: pink;
+}
+
