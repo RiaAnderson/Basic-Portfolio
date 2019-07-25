@@ -1,0 +1,15 @@
+a:hover {
+    background-color: red;
+}
+
+a:focus {
+    background-color: blue;
+}
+
+a:active {
+    background-color: green
+}
+
+a:default {
+    background-color: pink;
+}

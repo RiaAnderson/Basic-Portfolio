@@ -1,0 +1,30 @@
+header {
+    padding: 20px;
+    margin-bottom: 20px;
+    Float: center;
+    width: auto;
+    color: #777;
+    background: #fff;
+    border: #ccc;
+    text-align: center;
+}
+
+.nameNav {
+    margin: 0 auto;
+}
+
+h1 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    Float: left;
+    width: 33.3%;
+    color: #ffffff;
+    background: #4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif
+  }
+
+  .portfolio {
+    margin-top: 100px;
+    color: #4aaaa5;
+  }
