@@ -2,46 +2,84 @@
 <html lang="en">
 
   <head>
-
     <meta charset="UTF-8" />
 
     <link rel="stylesheet" type="text/css" href="css/style2.css">
-        <title>Contact</title>
 
-    </head>
+    <link href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker|Righteous|Satisfy|Signika&display=swap" rel="stylesheet">
+
+    <title>Contact</title>
+
+    <style>
+            nav {
+                border: 2px solid rgb(253, 232, 193);    
+                display: flex;              
+                flex-direction: row;        
+                width: 100%;                
+            }
+
+            span {
+                margin: 0 1em;              
+            }
+
+            span:first-child {
+                margin-left: 0;             
+            }
+
+            span:last-child {
+                margin-right: 0;            
+            }
+
+            #spacer {
+                display: flex;              
+                flex-grow: 1;               
+            }
+
+            body {
+                background-image: url("images/sakura.png");
+                background-color: #cccccc;
+            }
+        </style>
+  </head>
+
     <body>
-            <div class ="nameNav">
-                    <header>
-            
-                        <h1><center>Ria Anderson</center></h1>
-            
-                        <nav>
-                            About
-                            Portfolio
-                            Contact
-                        </nav>
-            
+        <header>         
+            <nav>
+                <h1>Ria Anderson</h1>
+                <span id="spacer"></span>
+
+                <div id="links">                    
+                <span>About</span>
+                <a>|</a>
+                <span>Portfolio</span>
+                <a>|</a>
+                <span>Contact</span>
                 </div>
-
-        <div class="contact-title">
-
-            <h2>Contact</h2>
-
-            <hr>
-
+            </nav>
+        
+        </header>
+        
+        <div class="container">
+            <article id="containerBox">
+                <div class="contact-title">
+                    <h2>Contact</h2>
+                    <hr>
+                </div>
+                <div class="contact-form">
+                    <form id="form" method="post" action="">
+                        <input name ="name" type="text" class="form-control" placeholder="Your Name" required><br>
+                        <input name ="email" type="email" class="form-control" placeholder="Your Email" required><br>
+                        <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
+                        <input type="submit" class="form-control submit" value="Submit">
+                    </form>
+                </div>
+            </article>
         </div>
+        
+        <footer>
 
-        <div class="contact-form">
-            <form id="form" method="post" action="">
-                <input name ="name" type="text" class="form-control" placeholder="Your Name" required><br>
-
-                <input name ="email" type="email" class="form-control" placeholder="Your Email" required><br>
-
-                <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
-
-                <input type="submit" class="form-control submit" value="Submit">
-            </form>
-
-        </div>
+                <p>Copyright © 2019</p>
+        
+            </footer>
     </body>
 </html>
