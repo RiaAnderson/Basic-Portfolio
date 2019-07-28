@@ -4,14 +4,14 @@
   <head>
     <meta charset="UTF-8" />
 
-    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <link rel="stylesheet" type="text/css" href="css/style4.css">
 
     <link href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker|Righteous|Satisfy|Signika&display=swap" rel="stylesheet">
 
     <title>About Me</title>
 
     <style>
-            nav {
+            /*nav {
                 border: 2px solid rgb(253, 232, 193);    
                 display: flex;              
                 flex-direction: row;        
@@ -33,7 +33,7 @@
             #spacer {
                 display: flex;              
                 flex-grow: 1;               
-            }
+            }*/
 
             body {
                 background-image: url("images/sakura.png");
@@ -41,68 +41,52 @@
             }
         </style>
   </head>
+<body>
+    <header>         
+        <nav>
+            <h1>Ria Anderson</h1>
+            <span id="spacer"></span>
 
-    <body>
-            <header>
-
-            
-
-                    <nav>
-                            <h1>Ria Anderson</h1>
-                            <span id="spacer"></span>
-        
-                            <div id="links">                    
-                            <span>About</span>
-                            <a>|</a>
-                            <span>Portfolio</span>
-                            <a>|</a>
-                            <span>Contact</span>
-                            </div>
-                        </nav>
-        
-                </header>
-
-        <div class="portfolio">
-
-                <article id="containerBox">
-            
+            <div id="links">                    
+                <button class="unstyled-button" onclick="window.location.href = 'index.html'" >About</a></button>
+                <a class="color">|</a>
+                <button class="unstyled-button" onclick="window.location.href = 'portfolio.html'" >Portfolio</a></span>
+                <a class="color">|</a>
+                <button class="unstyled-button" onclick="window.location.href = 'contact.html'">Contact</a></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <article id="containerBox">            
             <h2>Portfolio</h2>
-
             <hr>
-
             <div class="puppy">
-            <table style="width:100%">
-
-                    <tr>
-    
-                       
-                    <td><img class="pups" src= "images/maltipoo.jpg"height= 200
-                        width= 200> <div class="overlay">Maltipoo Puppy</div> </td>
-    
-                    <td><img class="pups" src= "images/maltese.jpg"height= 200
-                        width= 200><div class="overlay">Maltese Puppy</div></td>
-                   
-                    <td><img class="pups" src= "images/poodle.jpg"height= 200
-                        width= 200><div class="overlay">Poodle Puppy</div></td>
+                <table style="width:100%">
+                    <tr>                         
+                        <td><img class="pups" src= "images/maltipoo.jpg"height= 200
+                            width= 200> <div class="overlay">Maltipoo Puppy</div> </td>
+        
+                        <td><img class="pups" src= "images/maltese.jpg"height= 200
+                            width= 200><div class="overlay">Maltese Puppy</div></td>
+                    
+                        <td><img class="pups" src= "images/poodle.jpg"height= 200
+                            width= 200><div class="overlay">Poodle Puppy</div></td>
                     </tr>
                     <tr>
-                    <td><img class="pups" src= "images/shih.jpg"height= 200
-                        width= 200><div class="overlay">Shih Tzu Puppy</div></td>
-                    <td><img class="pups" src= "images/yorkie.jpg"height= 200
-                        width= 200><div class="overlay">Yorkie Puppy</div></td>
-                    <td><img class="pups" src= "images/corgi.jpg"height= 200
-                        width= 200><div class="overlay">Corgi Puppy</div></td>
-                    </tr>
-    
+                        <td><img class="pups" src= "images/shih.jpg"height= 200
+                            width= 200><div class="overlay">Shih Tzu Puppy</div></td>
+                        <td><img class="pups" src= "images/yorkie.jpg"height= 200
+                            width= 200><div class="overlay">Yorkie Puppy</div></td>
+                        <td><img class="pups" src= "images/corgi.jpg"height= 200
+                            width= 200><div class="overlay">Corgi Puppy</div></td>
+                    </tr>    
                 </table>
             </div>
-                    </article>
-        </div>
-
+        </article>
+    </div>
+    <br>
         <footer>
-
-                <p>Copyright © 2019</p>
-        
-            </footer>
-    </body>
+            <p>Copyright © 2019</p>        
+        </footer>
+</body>
 </html>

@@ -4,14 +4,14 @@
   <head>
     <meta charset="UTF-8" />
 
-    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/style4.css">
 
     <link href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker|Righteous|Satisfy|Signika&display=swap" rel="stylesheet">
 
     <title>Contact</title>
 
     <style>
-            nav {
+            /*nav {
                 border: 2px solid rgb(253, 232, 193);    
                 display: flex;              
                 flex-direction: row;        
@@ -33,7 +33,7 @@
             #spacer {
                 display: flex;              
                 flex-grow: 1;               
-            }
+            }*/
 
             body {
                 background-image: url("images/sakura.png");
@@ -49,16 +49,14 @@
                 <span id="spacer"></span>
 
                 <div id="links">                    
-                <span>About</span>
-                <a>|</a>
-                <span>Portfolio</span>
-                <a>|</a>
-                <span>Contact</span>
+                    <button class="unstyled-button" onclick="window.location.href = 'index.html'" >About</a></button>
+                    <a class="color">|</a>
+                    <button class="unstyled-button" onclick="window.location.href = 'portfolio.html'" >Portfolio</a></span>
+                    <a class="color">|</a>
+                    <button class="unstyled-button" onclick="window.location.href = 'contact.html'">Contact</a></span>
                 </div>
-            </nav>
-        
-        </header>
-        
+            </nav>        
+        </header>        
         <div class="container">
             <article id="containerBox">
                 <div class="contact-title">
@@ -75,11 +73,8 @@
                 </div>
             </article>
         </div>
-        
-        <footer>
-
-                <p>Copyright © 2019</p>
-        
-            </footer>
-    </body>
+    <footer>
+        <p>Copyright © 2019</p>        
+    </footer>
+</body>
 </html>
