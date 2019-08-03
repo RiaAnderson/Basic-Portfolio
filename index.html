@@ -1,50 +1,53 @@
-<!--When loading my website from my computer to Chrome everything displays fine. However, when loaded from git it no longer displays how it should.-->
+<!doctype html>
+<html lang="en-us">
 
-<!DOCTYPE html>
-<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | Ria Anderson</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker|Righteous|Satisfy|Signika&display=swap" rel="stylesheet">
+  <style>
+    body {
+    background: url("assets/images/sakura.png");
+    }
+  </style>
+</head>
 
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker|Righteous|Satisfy|Signika&display=swap" rel="stylesheet">
-        <title>About Me</title>
-        <style>
-            body {
-                background-image: url("assets/images/sakura.png");
-                background-color: #cccccc;
-            }
-        </style>
-    </head>
+<body>
 
-    <body>
-        <header>
-            <nav>
-                <h1>Ria Anderson</h1>
-                <span id="spacer"></span>
-                <div id="links">                    
-                    <button class="unstyled-button" onclick="window.location.href = 'index.html'" >About</a></button>
-                    <a class="color">|</a>
-                    <button class="unstyled-button" onclick="window.location.href = 'portfolio.html'" >Portfolio</a></span>
-                    <a class="color">|</a>
-                    <button class="unstyled-button" onclick="window.location.href = 'contact.html'">Contact</a></span>
-                </div>
-            </nav>
-        </header>
-        <div class="container">
-            <article id="containerBox">
-                <h2>About Me</h2>
-                <hr>
-                <img 
-                src="assets/images/Headshot19.PNG"
-                alt="Headshot"
-                height= 200
-                width= 200
-                />
-                <p>I am a graduate from Whitworth University with a BA in psychology. I have 4 years of experience as a Social Worker and years experience as a Web Business Consultant.</p>
-            </article>
-        </div>
-        <footer>
-            <p>Copyright © 2019</p>
-        </footer>
-    </body>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Ria Anderson</a>
+      <nav>
+          <div id="links">                    
+              <button class="unstyled-button" onclick="window.location.href = 'index.html'" >About</a></button>
+              <a class="color">|</a>
+              <button class="unstyled-button" onclick="window.location.href = 'portfolio.html'" >Portfolio</a></span>
+              <a class="color">|</a>
+              <button class="unstyled-button" onclick="window.location.href = 'contact.html'">Contact</a></span>
+          </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>About Me</h1>
+
+      <img src="assets/images/Headshot19.PNG" class="auth-image" width="500px" height="500px" alt="Ria Anderson">
+
+      <p>I am a graduate from Whitworth University with a BA in psychology. I have 4 years of experience as a Social Worker and years experience as a Web Business Consultant.</p>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2019 
+    </div>
+  </footer>
+</body>
+
 </html>

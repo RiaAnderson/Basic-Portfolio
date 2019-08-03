@@ -1,51 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en-us">
 
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker|Righteous|Satisfy|Signika&display=swap" rel="stylesheet">
-        <title>Contact</title>
-        <style>
-            body {
-                background-image: url("assets/images/sakura.png");
-                background-color: #cccccc;
-            }
-        </style>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Ria Anderson</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Acme|Permanent+Marker|Righteous|Satisfy|Signika&display=swap" rel="stylesheet">
+  <style>
+    body {
+    background: url("assets/images/sakura.png");
+    }
+  </style>
+</head>
 
-    <body>
-        <header>         
-            <nav>
-                <h1>Ria Anderson</h1>
-                <span id="spacer"></span>
-                <div id="links">                    
-                    <button class="unstyled-button" onclick="window.location.href = 'index.html'" >About</a></button>
-                    <a class="color">|</a>
-                    <button class="unstyled-button" onclick="window.location.href = 'portfolio.html'" >Portfolio</a></span>
-                    <a class="color">|</a>
-                    <button class="unstyled-button" onclick="window.location.href = 'contact.html'">Contact</a></span>
-                </div>
-            </nav>        
-        </header>        
-        <div class="container">
-            <article id="containerBox">
-                <div class="contact-title">
-                    <h2>Contact</h2>
-                    <hr>
-                </div>
-                <div class="contact-form">
-                    <form id="form" method="post" action="">
-                        <input name ="name" type="text" class="form-control" placeholder="Your Name" required><br>
-                        <input name ="email" type="email" class="form-control" placeholder="Your Email" required><br>
-                        <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
-                        <input type="submit" class="form-control submit" value="Submit">
-                    </form>
-                </div>
-            </article>
-        </div>
-        <footer> <!--Unable to kep the footer from having a space after it-->
-            <p>Copyright © 2019</p>        
-        </footer>
-    </body>
+<body>
+  
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Ria Anderson</a>
+      <nav>
+          <div id="links">                    
+              <button class="unstyled-button" onclick="window.location.href = 'index.html'" >About</a></button>
+              <a class="color">|</a>
+              <button class="unstyled-button" onclick="window.location.href = 'portfolio.html'" >Portfolio</a></span>
+              <a class="color">|</a>
+              <button class="unstyled-button" onclick="window.location.href = 'contact.html'">Contact</a></span>
+          </div>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form" method="post" action="">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input name ="name" type="text" class="form-control" placeholder="Enter Name" required>
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input name ="email" type="email" class="form-control" placeholder="example@gmail.com" required>
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit" class="form-control submit" value="Submit">
+      </form>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2019
+    </div>
+  </footer>
+ 
+</body>
+
 </html>
